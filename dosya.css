@@ -1,0 +1,160 @@
+
+        /* CSS ile Temel Tasarım */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color:#ffffff;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header img {
+            display: block;
+            margin: auto;
+            width: 50px; /* Yeni genişlik değeri */
+            height: auto; /* Otomatik yükseklik hesaplanacak */
+        }
+        nav {
+            background-color:#b41e8e;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        
+        .flex-container > div {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto; /* Yatay taşma olduğunda kaydırma çubuğunu göster */
+            -webkit-overflow-scrolling: touch; /* Safari'de pürüzsüz kaydırma */
+        }
+        
+        .flex-container > div > div {
+            background-color:#b41e8e;
+            margin-right: 10px;
+            max-width: 100%; /* Div'in maksimum genişliği sayfa genişliğine eşit olacak */
+            flex: 0 0 auto; /* Flex öğesi boyutu otomatik olarak ayarlanacak */
+        }
+        .flex-container > div > div > a{
+
+            color: #ffffff;
+            text-align: center;
+        }
+        
+        .flex-container > div > div > a > img {
+            max-width: auto; /* Resmin maksimum genişliği div'in içine sığacak şekilde ayarlanır */
+            height: auto; /* Yükseklik otomatik olarak ayarlanır */
+        
+        }
+        
+        
+        
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+ .kayan-yazi {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.yazi {
+    display: inline-block;
+    padding: 10px 20px; /* İstediğiniz boşluk değerlerini kullanabilirsiniz */
+    animation: kaydir 20s linear infinite;
+}
+
+/* Kaydırma animasyonu tanımı */
+@keyframes kaydir {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+.full-page-ad {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; /* Bu değer sayfanın içeriğiyle uyumlu bir şekilde ayarlanabilir */
+}
+
+
+
+
+        h1 a {
+            color: #b41e8e; /* Bordo rengi */
+            text-decoration: none;
+        }
+        h1 a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        footer {
+            background-color: #b41e8e;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .borsa-paneli {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            
+        }
+        
+        .borsa-satir {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .borsa-kolon {
+            flex-grow: 1;
+            text-align: center;
+            color: white;
+        }
+        
+        .borsa-baslik {
+            font-weight: bold;
+            font-size: 30px;
+            color: #fff;
+
+        }
+        
+        .borsa-deger {
+            font-size: 20px;
+            color: #fff;
+            padding: 8px;
+            text-align: center;
+        }
+
+        
+        
